@@ -1,103 +1,90 @@
 import { FaBook, FaUserSecret, FaEdit, FaBookOpen, FaBullhorn, FaGlobe, FaPaintBrush, FaDrawPolygon, FaPrint, FaVideo, FaHeadphones } from 'react-icons/fa';
 
 export default function WhyChooseUs() {
-  const services = [
+  const genres = [
     {
-      id: "01",
-      title: "BOOK WRITING SERVICE",
+      title: "Mystery",
       icon: FaBook
     },
     {
-      id: "02",
-      title: "GHOST BOOK WRITING SERVICE",
+      title: "Horror",
       icon: FaUserSecret
     },
     {
-      id: "03",
-      title: "BOOK EDITING & PROOFREADING SERVICE",
+      title: "Romance",
       icon: FaEdit
     },
     {
-      id: "04",
-      title: "BOOK PUBLISHING SERVICE",
+      title: "Children's Books",
       icon: FaBookOpen
     },
     {
-      id: "05",
-      title: "BOOK MARKETING SERVICE",
+      title: "Fantasy",
       icon: FaBullhorn
     },
     {
-      id: "06",
-      title: "AUTHOR WEBSITE SERVICE",
+      title: "How-To Guides",
       icon: FaGlobe
     },
     {
-      id: "07",
-      title: "BOOK COVER DESIGN",
+      title: "Drama",
       icon: FaPaintBrush
     },
     {
-      id: "08",
-      title: "BOOK ILLUSTRATION SERVICE",
+      title: "Crime",
       icon: FaDrawPolygon
     },
     {
-      id: "09",
-      title: "BOOK PRINTING SERVICE",
+      title: "Biography",
       icon: FaPrint
     },
     {
-      id: "10",
-      title: "VIDEO PRODUCTION SERVICE",
+      title: "Health",
       icon: FaVideo
-    },
-    {
-      id: "11",
-      title: "AUDIO BOOK PUBLISHING",
-      icon: FaHeadphones
     }
   ];
 
   return (
-    <section className="damascus-pattern text-white py-20 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
+    <section className="py-20 relative overflow-hidden">
+      {/* Background with whitish gradient and huge blurred orange spots */}
+      <div className="absolute inset-0 bg-gradient-to-br from-white via-gray-50 to-orange-50"></div>
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-orange-300 rounded-full blur-3xl opacity-20"></div>
+        <div className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-orange-400 rounded-full blur-3xl opacity-15"></div>
+        <div className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 w-[900px] h-[900px] bg-orange-300 rounded-full blur-3xl opacity-20"></div>
+        <div className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-[700px] h-[700px] bg-orange-400 rounded-full blur-3xl opacity-15"></div>
+      </div>
+      
       <div className="max-w-[1400px] mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-3xl font-oswald mb-4 text-white uppercase">
-            FROM DREAMS TO SUCCESS: Amazon Legacy Press EXPERTS ELEVATE AUTHORS
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-oswald font-bold mb-8">
+            <span className="text-gray-800">Genres Mirroring Your Infinite </span>
+            <span className="text-orange-500">Creative Potential</span>
           </h2>
-          <h3 className="text-3xl md:text-4xl lg:text-5xl font-oswald font-bold mb-8 text-orange-500">
-            THE PREMIER CHOICE FOR UNMATCHED PUBLISHING SERVICES
-            <span className="text-white"> – WHY CHOOSE US?</span>
-          </h3>
-          <p className="text-gray-400 max-w-4xl mx-auto text-lg leading-relaxed">
-            FOR MORE THAN EIGHT YEARS, Amazon Legacy Press EXPERTS HAVE BEEN AT THE FOREFRONT OF THE PUBLISHING INDUSTRY,
-            CREATING AN EXTENSIVE PORTFOLIO FILLED WITH HUNDREDS OF BESTSELLERS. OUR CONSISTENT DEDICATION TO QUALITY HAS EARNED US AN
-            OUTSTANDING REPUTATION IN THE LITERARY WORLD. WHETHER YOU NEED WRITING, PUBLISHING, OR MARKETING SUPPORT, AMAZON CLASSIC
-            PUBLISHERS EXPERTS ARE YOUR ALL-IN-ONE PARTNER FOR ACHIEVING LITERARY EXCELLENCE.
+          <p className="text-gray-600 max-w-4xl mx-auto text-lg leading-relaxed">
+            Amazon Publishing offers a wide range of genres. Feel secure knowing that your work will find the ideal publication venue thanks to our knowledge of various literary forms.
           </p>
         </div>
 
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service) => {
-            const IconComponent = service.icon;
+        {/* Genres Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          {genres.map((genre, index) => {
+            const IconComponent = genre.icon;
             return (
               <div
-                key={service.id}
-                className="bg-white p-8 rounded-lg text-center group hover:bg-orange-500 transition-all duration-300"
+                key={index}
+                className="border border-orange-500 rounded-lg p-6 text-center group hover:border-orange-400 transition-all duration-300 cursor-pointer bg-white/50 backdrop-blur-sm hover:bg-white/80"
               >
-                <div className="text-6xl mb-4 text-orange-500 group-hover:text-white flex justify-center">
-                  <IconComponent className="w-16 h-16" />
+                <div className="flex justify-center mb-4">
+                  <div className="relative w-16 h-16 flex items-center justify-center">
+                    <div className="absolute w-12 h-12 bg-orange-500 rounded-full opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                    <IconComponent className="w-8 h-8 text-gray-800 relative z-10" />
+                  </div>
                 </div>
-                <div className="text-gray-800 group-hover:text-white">
-                  <div className="text-4xl font-oswald font-light mb-2">{service.id}</div>
-                  <h3 className="font-oswald font-bold text-xl">
-                    {service.title}
-                  </h3>
-                </div>
+                <h3 className="font-oswald font-semibold text-lg text-gray-800">
+                  {genre.title}
+                </h3>
               </div>
             );
           })}

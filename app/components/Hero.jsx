@@ -66,7 +66,7 @@ export default function Hero() {
         <div 
           className="w-full h-full bg-cover bg-center"
           style={{
-            backgroundImage: `url('/hero-books.jpg')`,
+            backgroundImage: `url('/bg-image.jpg')`,
           }}
         ></div>
       </div>
@@ -77,10 +77,10 @@ export default function Hero() {
           {/* Text Content */}
           <div className="text-white max-w-2xl">
             <h2 className="font-oswald text-lg md:text-xl mb-4 text-orange-500 uppercase font-medium tracking-wider">
-              Amazon Legacy Press EXPERTS - CRAFTING BESTSELLING MASTERPIECES FROM YOUR STORIES
+              Amazon Legacy Press EXPERTS - TRANSFORMING YOUR STORIES INTO BESTSELLING MASTERPIECES
             </h2>
             <h1 className="font-oswald text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-wide">
-              YOUR PATHWAY TO TURNING LITERARY DREAMS INTO BESTSELLING SUCCESS
+              TRANSFORM YOUR LITERARY DREAMS INTO BESTSELLING SUCCESS
             </h1>
             <a href='/about'><button className="btn-primary text-lg uppercase tracking-wider">
               DISCOVER MORE
@@ -88,7 +88,7 @@ export default function Hero() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-gray-800/80 hidden md:block p-8 rounded-lg w-full max-w-md">
+          <div className="bg-white/20 backdrop-blur-lg border border-white/30 shadow-2xl hidden md:block p-8 rounded-lg w-full max-w-md">
             <h3 className="font-oswald text-2xl text-white font-bold mb-6 text-center">Let's Get Started</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <input
@@ -126,7 +126,6 @@ export default function Hero() {
                 SEND MESSAGE
               </button>
             </form>
-            <p className='text-center mt-4 text-white'><span className='text-orange-500'>Disclaimer: </span> By providing a telephone number and submitting the form you are consenting to be contacted by SMS text message. Message and data rates may apply. Reply STOP to opt out of further messaging. Visit Our <a href='/privacypolicy' className='text-orange-500 underline'>Privacy Policy Page</a> for further knowledge.</p>
           </div>
         </div>
       </div>
