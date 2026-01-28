@@ -68,12 +68,11 @@ export default function page() {
               {/* Text Content */}
               <div className="text-white mt-16 md:mt-0 max-w-2xl">
                 <h2 className="font-oswald text-lg md:text-xl mb-4 text-orange-500 uppercase font-medium tracking-wider">
-                  WELCOME TO Amazon Legacy Press EXPERTS
+                  WELCOME TO Kindle Publishing Hub EXPERTS
                 </h2>
-                <h1 className="font-oswald text-2xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-wide">
+                <h1 className="font-oswald text-2xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-wide">
                 Are you an author ready to publish your book on Amazon, or a publisher aiming to refine your digital publishing strategy?
                 </h1>
-                <p className="text-sm md:text-lg mb-8">Reach out to us for a complimentary consultation, and together, we'll transform your literary ambitions into tangible success.</p>
                 <button className="btn-primary text-lg uppercase tracking-wider">
                   DISCOVER MORE
                 </button>
@@ -85,11 +84,12 @@ export default function page() {
 
 
               {/* Contact Form */}
-              <div className="bg-gray-800/80 p-8  rounded-lg w-full max-w-md">
+              <div className="bg-white/20 backdrop-blur-lg border border-white/30 shadow-2xl p-8 rounded-lg w-full max-w-md">
                 <h3 className="font-oswald text-2xl text-white font-bold mb-6 text-center">Let's Get Started</h3>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <input
                     type="text"
+                    name="fullName"
                     placeholder="Full Name"
                     className="form-input"
                     value={formData.fullName}
@@ -97,6 +97,7 @@ export default function page() {
                   />
                   <input
                     type="email"
+                    name="email"
                     placeholder="Your Email"
                     className="form-input"
                     value={formData.email}
@@ -104,12 +105,14 @@ export default function page() {
                   />
                   <input
                     type="tel"
+                    name="phone"
                     placeholder="Phone Number"
                     className="form-input"
                     value={formData.phone}
                     onChange={handleChange}
                   />
                   <textarea
+                    name="message"
                     placeholder="Message"
                     rows="4"
                     className="form-input"
@@ -123,9 +126,6 @@ export default function page() {
                     SEND MESSAGE
                   </button>
                 </form>
-            <p className='text-center mt-4 text-white'><span className='text-orange-500'>Disclaimer: </span> By providing a telephone number and submitting the form you are consenting to be contacted by SMS text message. Message and data rates may apply. Reply STOP to opt out of further messaging. Visit Our <a href='/privacypolicy' className='text-orange-500 underline'>Privacy Policy Page</a> for further knowledge.</p>
-
-
               </div>
               </div>
             </div>
@@ -137,9 +137,9 @@ export default function page() {
                 Are you an author ready to launch your book on Amazon, or a publisher looking to enhance your digital publishing approach? Contact us for a free consultation, and let’s bring your literary visions to life.
                 </h2>
                 <h1 className="font-oswald text-gray-500 text-md text-center md:text-xl lg:text-xl mb-6 tracking-wide">
-                Dive into the realm of audiobook publishing and share your stories with a wider, enthusiastic audience. Discover the potential of audiobook creation and distribution with Amazon Legacy Press Experts and expand your reach today.
+                Dive into the realm of audiobook publishing and share your stories with a wider, enthusiastic audience. Discover the potential of audiobook creation and distribution with Kindle Publishing Hub Experts and expand your reach today.
                 </h1>
-                <p className="text-sm text-center text-gray-500 md:text-lg">Email: support@amazonlegacypress.com</p>
+                <p className="text-sm text-center text-gray-500 md:text-lg">Email: support@kindlepublishinghub.com</p>
                 <p className="text-sm text-center text-gray-500 md:text-lg pb-12">Our Address: 1401 Lavaca St Austin, TX 78701</p>
 
                 {/* <p className="text-sm text-center text-gray-500 md:text-lg">Address: 15500 VOSS RD SUITE 586, Sugar Land, TX 77498, United States</p> */}

@@ -40,7 +40,7 @@ const ContactModal = ({ isOpen, onClose }) => {
           "service_r0ex0cl", 
           "template_4vtfjk5",
           {
-            to_email: 'support@amazonlegacypress.com',
+            to_email: 'support@kindlepublishinghub.com',
             from_name: name,
             from_email: email,
             phone,

@@ -54,7 +54,7 @@ export default function page() {
         'service_r0ex0cl', // Replace with your service ID
         'template_4vtfjk5', // Replace with your template ID
         {
-          to_email: 'support@amazonlegacypress.com',
+          to_email: 'support@kindlepublishinghub.com',
           from_name: fullName,
           from_email: email,
           phone,
@@ -103,12 +103,12 @@ export default function page() {
               {/* Text Content */}
               <div className="text-white mt-16 md:mt-0 max-w-2xl">
                 <h2 className="font-oswald text-lg md:text-xl mb-4 text-orange-500 uppercase font-medium tracking-wider">
-                  WELCOME TO Amazon Legacy Press EXPERTS
+                  WELCOME TO Kindle Publishing Hub EXPERTS
                 </h2>
                 <h1 className="font-oswald text-2xl md:text-5xl lg:text-6xl uppercase font-bold mb-6 tracking-wide">
                   your one-step solution for everything about books
                 </h1>
-                <p className="text-sm md:text-lg mb-8">At Amazon Legacy Press Experts, we stand by you every step of the way, offering an extensive range of services to bring your publishing goals to life. Founded on a powerful yet simple mission, we aim to empower both authors and publishers as they navigate the ever-evolving world of publishing.</p>
+                <p className="text-sm md:text-lg mb-8">At Kindle Publishing Hub Experts, we stand by you every step of the way, offering an extensive range of services to bring your publishing goals to life. Founded on a powerful yet simple mission, we aim to empower both authors and publishers as they navigate the ever-evolving world of publishing.</p>
                 <div className='space-x-2'>
                   <button onClick={openModal} className="btn-primary px-2 text-lg  tracking-wider">
                   &#8594; Start Project 

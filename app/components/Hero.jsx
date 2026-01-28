@@ -40,7 +40,7 @@ export default function Hero() {
         'service_r0ex0cl', // Replace with your service ID
         'template_4vtfjk5', // Replace with your template ID
         {
-          to_email: 'support@amazonlegacypress.com',
+          to_email: 'support@kindlepublishinghub.com',
           from_name: fullName,
           from_email: email,
           phone,
@@ -77,7 +77,7 @@ export default function Hero() {
           {/* Text Content */}
           <div className="text-white max-w-2xl">
             <h2 className="font-oswald text-lg md:text-xl mb-4 text-orange-500 uppercase font-medium tracking-wider">
-              Amazon Legacy Press EXPERTS - TRANSFORMING YOUR STORIES INTO BESTSELLING MASTERPIECES
+              Kindle Publishing Hub EXPERTS - TRANSFORMING YOUR STORIES INTO BESTSELLING MASTERPIECES
             </h2>
             <h1 className="font-oswald text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-wide">
               TRANSFORM YOUR LITERARY DREAMS INTO BESTSELLING SUCCESS

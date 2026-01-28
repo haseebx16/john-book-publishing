@@ -28,7 +28,7 @@ export default function Footer() {
           {/* Logo Section */}
           <div>
             <Link href="/" className="inline-block mb-6">
-              <img src='/footer.png' style={{ width: "200px", height: "60px" }}/>
+              <img src='/footer.png' style={{ width: "180px", height: "45px" }}/>
             </Link>
             
           </div>
@@ -74,10 +74,10 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <FaEnvelope className="text-orange-500 flex-shrink-0" />
                 <Link 
-                  href="mailto:support@amazonlegacypress.com"
+                  href="mailto:support@kindlepublishinghub.com"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  support@amazonlegacypress.com
+                  support@kindlepublishinghub.com
                 </Link>
               </li>
               <li className="flex items-center gap-3">
@@ -99,9 +99,9 @@ export default function Footer() {
       <div className="border-t border-gray-800">
         <div className="max-w-[1400px] mx-auto px-4 py-6">
           <div className="text-center space-y-4">
-            <p className="text-gray-400">Amazon Legacy Press | &copy; Copyright 2025</p>
+            <p className="text-gray-400">Kindle Publishing Hub | &copy; Copyright 2025</p>
             <p className="text-gray-500 text-sm max-w-4xl mx-auto">
-              <span className="font-semibold">Disclaimer:</span> Amazon Legacy Press operates as a standalone entity, entirely separate from Amazon.com, offering support to independent authors in their publishing and marketing endeavors. We adhere to ethical business standards and comply with all applicable U.S. Federal and State regulations.
+              <span className="font-semibold">Disclaimer:</span> Kindle Publishing Hub operates as a standalone entity, entirely separate from Amazon.com, offering support to independent authors in their publishing and marketing endeavors. We adhere to ethical business standards and comply with all applicable U.S. Federal and State regulations.
             </p>
           </div>
         </div>

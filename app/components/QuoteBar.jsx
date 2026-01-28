@@ -13,8 +13,7 @@ export default function QuoteBar() {
                 QUOTE TODAY!
               </h2>
               <p className="text-white/90 text-lg leading-relaxed">
-                Kick off your journey with a complimentary quote from Amazon
-                Classic Publishers Experts. Our dedication to transparency makes
+                Kick off your journey with a complimentary quote from Publishing Experts. Our dedication to transparency makes
                 it easy to explore your options and plan confidently. Get a no-obligation,
                 cost-free quote and start your publishing journey with
                 clarity.

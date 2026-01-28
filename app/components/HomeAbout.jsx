@@ -3,17 +3,17 @@ import Image from 'next/image';
 export default function HomeAbout() {
   const testimonials = [
     {
-      quote: "Amazon Publishing transformed my manuscript into a masterpiece. Their attention to detail and professional approach exceeded my expectations.",
+      quote: "Kindle Publishing Hub transformed my manuscript into a masterpiece. Their attention to detail and professional approach exceeded my expectations.",
       name: "Austin Max",
       avatar: "https://picsum.photos/seed/austin-max/200/200"
     },
     {
-      quote: "The professionals from Amazon Publishing guided me through every step of the process. Their expertise and dedication to my book's success was truly remarkable.",
+      quote: "The professionals from Kindle Publishing Hub guided me through every step of the process. Their expertise and dedication to my book's success was truly remarkable.",
       name: "Mark Daniel",
       avatar: "https://picsum.photos/seed/mark-daniel/200/200"
     },
     {
-      quote: "Amazon Publishing helped my book stand out in a crowded market. Their marketing strategies and design work made all the difference.",
+      quote: "Kindle Publishing Hub helped my book stand out in a crowded market. Their marketing strategies and design work made all the difference.",
       name: "Samantha Joseph",
       avatar: "https://picsum.photos/seed/samantha-joseph/200/200"
     },
@@ -23,12 +23,12 @@ export default function HomeAbout() {
       avatar: "https://picsum.photos/seed/john-sumner/200/200"
     },
     {
-      quote: "As a brand-new writer, Amazon Publishing's support was invaluable. They made the entire publishing journey smooth and enjoyable.",
+      quote: "As a brand-new writer, Kindle Publishing Hub's support was invaluable. They made the entire publishing journey smooth and enjoyable.",
       name: "Mitchelle Smith",
       avatar: "https://picsum.photos/seed/mitchelle-smith/200/200"
     },
     {
-      quote: "Amazon Publishing is the best! I learned so much about writing compelling content, and they helped me achieve my publishing goals.",
+      quote: "Kindle Publishing Hub is the best! I learned so much about writing compelling content, and they helped me achieve my publishing goals.",
       name: "David Wilson",
       avatar: "https://picsum.photos/seed/david-wilson/200/200"
     }

@@ -23,7 +23,7 @@ export default function BookWritingServices() {
             <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
               <div className="text-white mt-16 md:mt-0">
                 <h2 className="font-oswald text-2xl text-center md:text-4xl mb-4 text-orange-500 uppercase font-medium tracking-wider">
-                Amazon Legacy Press
+                Kindle Publishing Hub
                 </h2>
                 <p className="text-sm text-center text-gray-600 md:text-lg mb-8">
                 Privacy Policy
@@ -41,7 +41,7 @@ export default function BookWritingServices() {
                 Your Privacy, Our Commitment
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
-                Amazon Legacy Press takes your privacy seriously. We are dedicated to protecting your personal data and using it responsibly. Our Consumer Data Policy ensures transparency and fosters trust, so you can engage with our services confidently.
+                Kindle Publishing Hub takes your privacy seriously. We are dedicated to protecting your personal data and using it responsibly. Our Consumer Data Policy ensures transparency and fosters trust, so you can engage with our services confidently.
                 </p>
                 <h2 className="text-4xl font-oswald text-gray-800 mb-6">
                 Data Collection
@@ -86,7 +86,7 @@ export default function BookWritingServices() {
                 2. Consent
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
-                By providing your phone number, you consent to its use strictly for the purposes stated above. Consent is obtained through the Contact Form, and you may withdraw consent at any time by contacting us at <span className='text-orange-500'>support@amazonlegacypress.com</span>.
+                By providing your phone number, you consent to its use strictly for the purposes stated above. Consent is obtained through the Contact Form, and you may withdraw consent at any time by contacting us at <span className='text-orange-500'>support@kindlepublishinghub.com</span>.
                 </p>
                 <h2 className="text-4xl font-oswald text-gray-800 mb-6">
                 3. Third-Party Sharing
@@ -113,13 +113,13 @@ export default function BookWritingServices() {
                 5. Your Rights
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
-                You may request access to, correction of, or deletion of your phone number from our systems by contacting <span className='text-orange-500'>support@amazonlegacypress.com</span>.
+                You may request access to, correction of, or deletion of your phone number from our systems by contacting <span className='text-orange-500'>support@kindlepublishinghub.com</span>.
                 </p>
                 <h2 className="text-4xl font-oswald text-gray-800 mb-6">
                 Example For Direct Use
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
-                "We collect phone numbers solely to contact. Your phone number and consent will never be shared with third-party providers, advertisers, or external organizations unless explicitly required by law or to fulfill services you’ve requested (e.g., SMS delivery). All data is secured and retained only for as long as necessary. You may withdraw consent or request deletion at any time by contacting support@amazonlegacypress.com."
+                "We collect phone numbers solely to contact. Your phone number and consent will never be shared with third-party providers, advertisers, or external organizations unless explicitly required by law or to fulfill services you’ve requested (e.g., SMS delivery). All data is secured and retained only for as long as necessary. You may withdraw consent or request deletion at any time by contacting support@kindlepublishinghub.com."
                 </p>
                 
               </div>

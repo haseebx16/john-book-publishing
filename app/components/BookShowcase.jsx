@@ -48,11 +48,11 @@ export default function BookShowcase() {
           {/* Right Column - Content */}
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-oswald text-white font-bold mb-6">
-              Why Amazon Publishing is the Ideal Choice for Every Writer?
+              Why Kindle Publishing Hub is the Ideal Choice for Every Writer?
             </h2>
             
             <p className="text-white mb-8 leading-relaxed">
-              Amazon Publishing offers complete control over your book's pricing and earnings, ensuring you keep a significant portion of your royalties. With global reach, your work can be discovered by millions of readers worldwide. Our expert team provides professional book cover design, marketing expertise to boost visibility, and creative control throughout the publishing process. Join our network of successful authors who have transformed their writing dreams into bestselling realities.
+              Kindle Publishing Hub offers complete control over your book's pricing and earnings, ensuring you keep a significant portion of your royalties. With global reach, your work can be discovered by millions of readers worldwide. Our expert team provides professional book cover design, marketing expertise to boost visibility, and creative control throughout the publishing process. Join our network of successful authors who have transformed their writing dreams into bestselling realities.
             </p>
 
             {/* Services List in Two Columns */}

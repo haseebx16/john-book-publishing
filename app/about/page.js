@@ -49,7 +49,7 @@ export default function page() {
         'service_r0ex0cl', // Replace with your service ID
         'template_4vtfjk5', // Replace with your template ID
         {
-          to_email: 'support@amazonlegacypress.com',
+          to_email: 'support@kindlepublishinghub.com',
           from_name: fullName,
           from_email: email,
           phone,
@@ -84,7 +84,7 @@ export default function page() {
         <div 
           className="w-full h-full bg-cover bg-center"
           style={{
-            backgroundImage: `url('/hero-books.jpg')`,
+            backgroundImage: `url('/bg-image.jpg')`,
           }}
         ></div>
       </div>
@@ -95,19 +95,19 @@ export default function page() {
               {/* Text Content */}
               <div className="text-white mt-16 md:mt-0 max-w-2xl">
                 <h2 className="font-oswald text-lg md:text-xl mb-4 text-orange-500 uppercase font-medium tracking-wider">
-                  WELCOME TO Amazon Legacy Press EXPERTS
+                  WELCOME TO Kindle Publishing Hub EXPERTS
                 </h2>
                 <h1 className="font-oswald text-2xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-wide">
                   NAVIGATING DIGITAL PUBLISHING CHALLENGES WITH A RELIABLE ALLY
                 </h1>
-                <p className="text-sm md:text-lg mb-8">At Amazon Legacy Press Experts, we stand by you every step of the way, offering an extensive range of services to bring your publishing goals to life. Founded on a powerful yet simple mission, we aim to empower both authors and publishers as they navigate the ever-evolving world of publishing.</p>
+                <p className="text-sm md:text-lg mb-8">At Kindle Publishing Hub Experts, we stand by you every step of the way, offering an extensive range of services to bring your publishing goals to life. Founded on a powerful yet simple mission, we aim to empower both authors and publishers as they navigate the ever-evolving world of publishing.</p>
                 <button className="btn-primary text-lg uppercase tracking-wider">
                   DISCOVER MORE
                 </button>
               </div>
 
               {/* Contact Form */}
-              <div className="bg-gray-800/80 p-8  rounded-lg w-full max-w-md">
+              <div className="bg-white/20 backdrop-blur-lg border border-white/30 shadow-2xl p-8 rounded-lg w-full max-w-md">
                 <h3 className="font-oswald text-2xl text-white font-bold mb-6 text-center">Let's Get Started</h3>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <input
@@ -149,7 +149,6 @@ export default function page() {
                     SEND MESSAGE
                   </button>
                 </form>
-            <p className='text-center mt-4 text-white'><span className='text-orange-500'>Disclaimer: </span> By providing a telephone number and submitting the form you are consenting to be contacted by SMS text message. Message and data rates may apply. Reply STOP to opt out of further messaging. Visit Our <a href='/privacypolicy' className='text-orange-500 underline'>Privacy Policy Page</a> for further knowledge.</p>
               </div>
 
             </div>
@@ -183,7 +182,7 @@ export default function page() {
                     Landscape with Proven Marketing Excellence.
                   </h2>
                   <p className="text-gray-700 mb-8">
-                    Amazon Legacy Press Experts specializes in book marketing and is a reliable partner for authors seeking both writing and promotional support. Our all-encompassing services cover editing, proofreading, cover design, reviews, and platform building.
+                    Kindle Publishing Hub Experts specializes in book marketing and is a reliable partner for authors seeking both writing and promotional support. Our all-encompassing services cover editing, proofreading, cover design, reviews, and platform building.
                   </p>
                 </div>
 

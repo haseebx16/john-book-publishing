@@ -52,7 +52,7 @@ export default function page() {
         'service_r0ex0cl', // Replace with your service ID
         'template_4vtfjk5', // Replace with your template ID
         {
-          to_email: 'support@amazonlegacypress.com',
+          to_email: 'support@kindlepublishinghub.com',
           from_name: fullName,
           from_email: email,
           phone,
@@ -80,32 +80,32 @@ export default function page() {
     {
       id: 1,
       name: "JONATHAN HARRIS",
-      text: "Amazon Legacy Press Experts turned my dream into reality. Their careful attention to detail and unwavering support throughout the publishing process made all the difference. I couldn't have asked for a better team to bring my book to life."
+      text: "Kindle Publishing Hub Experts turned my dream into reality. Their careful attention to detail and unwavering support throughout the publishing process made all the difference. I couldn't have asked for a better team to bring my book to life."
     },
     {
       id: 2,
       name: "SOPHIA MARTINEZ",
-      text: "Working with Amazon Legacy Press Experts was a game-changer for me. Their expertise and dedication to crafting a successful publishing strategy were instrumental in my book's success. I highly recommend their services to any author."
+      text: "Working with Kindle Publishing Hub Experts was a game-changer for me. Their expertise and dedication to crafting a successful publishing strategy were instrumental in my book's success. I highly recommend their services to any author."
     },
     {
       id: 3,
       name: "DAVID THOMPSON",
-      text: "From the initial concept to the final product, Amazon Legacy Press Experts provided exceptional guidance and support. Their professionalism and commitment to excellence ensured my book reached its full potential."
+      text: "From the initial concept to the final product, Kindle Publishing Hub Experts provided exceptional guidance and support. Their professionalism and commitment to excellence ensured my book reached its full potential."
     },
     {
       id: 4,
       name: "EMMA WILSON",
-      text: "The team at Amazon Legacy Press Experts demonstrated unparalleled expertise in bringing my manuscript to life. Their attention to detail and commitment to quality exceeded my expectations at every turn."
+      text: "The team at Kindle Publishing Hub Experts demonstrated unparalleled expertise in bringing my manuscript to life. Their attention to detail and commitment to quality exceeded my expectations at every turn."
     },
     {
       id: 5,
       name: "MICHAEL CHEN",
-      text: "I'm thoroughly impressed with the professional service provided by Amazon Legacy Press Experts. Their strategic approach to publishing and marketing has helped my book reach audiences I never thought possible."
+      text: "I'm thoroughly impressed with the professional service provided by Kindle Publishing Hub Experts. Their strategic approach to publishing and marketing has helped my book reach audiences I never thought possible."
     },
     {
       id: 6,
       name: "SARAH ANDERSON",
-      text: "Choosing Amazon Legacy Press Experts was the best decision for my publishing journey. Their comprehensive approach and dedication to author success truly sets them apart in the industry."
+      text: "Choosing Kindle Publishing Hub Experts was the best decision for my publishing journey. Their comprehensive approach and dedication to author success truly sets them apart in the industry."
     }
   ];
 
@@ -139,17 +139,14 @@ export default function page() {
       <main className="relative w-full overflow-x-hidden">
         <section className="relative h-screen">
           {/* Background Image with Overlay */}
-          <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-black bg-opacity-80 z-10"></div>
-            <Image
-              src="/testimonials.jpeg"
-              alt="Background"
-              layout="fill"
-              objectFit="cover"
-              quality={100}
-              priority
-              className="z-0 h-full w-full"
-            />
+          <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 bg-black/60 z-10"></div>
+            <div 
+              className="w-full h-full bg-cover bg-center"
+              style={{
+                backgroundImage: `url('/bg-image.jpg')`,
+              }}
+            ></div>
           </div>
 
           {/* Content */}
@@ -158,19 +155,19 @@ export default function page() {
               {/* Text Content */}
               <div className="text-white max-w-2xl">
                 <h2 className="font-oswald mt-20 text-lg md:text-xl mb-4 text-orange-500 uppercase font-medium tracking-wider">
-                Welcome to Amazon Legacy Press
+                Welcome to Kindle Publishing Hub
                 </h2>
                 <h1 className="font-oswald text-2xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-wide">
-                IT'S TIME TO BRING THAT MANUSCRIPT TO LIFE. COMPLETE PUBLISHING SOLUTIONS
+                IT'S TIME TO BRING THAT MANUSCRIPT TO LIFE.
                 </h1>
-                <p className="text-sm md:text-lg mb-8">Unlock the full potential of your manuscript with our all-encompassing publishing services, designed to cater to the distinct needs of both authors and publishers. From the first review to the final distribution, we guide you through a smooth process, ensuring your work receives the attention and acclaim it truly merits.</p>
+                <p className="text-sm md:text-lg mb-8">Unlock the full potential of your manuscript with our comprehensive publishing services. We guide you through a smooth process, ensuring your work receives the attention it deserves.</p>
                 <button className="btn-primary text-lg uppercase tracking-wider">
                   DISCOVER MORE
                 </button>
               </div>
 
               {/* Contact Form */}
-              <div className="bg-gray-800/80 p-8 hidden md:block rounded-lg w-full max-w-md">
+              <div className="bg-white/20 backdrop-blur-lg border border-white/30 shadow-2xl p-8 hidden md:block rounded-lg w-full max-w-md">
                 <h3 className="font-oswald text-2xl text-white font-bold mb-6 text-center">Let's Get Started</h3>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <input
@@ -212,8 +209,6 @@ export default function page() {
                     SEND MESSAGE
                   </button>
                 </form>
-            <p className='text-center mt-4 text-white'><span className='text-orange-500'>Disclaimer: </span> By providing a telephone number and submitting the form you are consenting to be contacted by SMS text message. Message and data rates may apply. Reply STOP to opt out of further messaging. Visit Our <a href='/privacypolicy' className='text-orange-500 underline'>Privacy Policy Page</a> for further knowledge.</p>
-
               </div>
             </div>
           </div>

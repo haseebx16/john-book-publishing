@@ -50,7 +50,7 @@ export default function page() {
         'service_r0ex0cl', // Replace with your service ID
         'template_4vtfjk5', // Replace with your template ID
         {
-          to_email: 'support@amazonlegacypress.com',
+          to_email: 'support@kindlepublishinghub.com',
           from_name: fullName,
           from_email: email,
           phone,
@@ -78,32 +78,32 @@ export default function page() {
     {
       id: 1,
       name: "JONATHAN HARRIS",
-      text: "Amazon Legacy Press Experts turned my dream into reality. Their careful attention to detail and unwavering support throughout the publishing process made all the difference. I couldn't have asked for a better team to bring my book to life."
+      text: "Kindle Publishing Hub Experts turned my dream into reality. Their careful attention to detail and unwavering support throughout the publishing process made all the difference. I couldn't have asked for a better team to bring my book to life."
     },
     {
       id: 2,
       name: "SOPHIA MARTINEZ",
-      text: "Working with Amazon Legacy Press Experts was a game-changer for me. Their expertise and dedication to crafting a successful publishing strategy were instrumental in my book's success. I highly recommend their services to any author."
+      text: "Working with Kindle Publishing Hub Experts was a game-changer for me. Their expertise and dedication to crafting a successful publishing strategy were instrumental in my book's success. I highly recommend their services to any author."
     },
     {
       id: 3,
       name: "DAVID THOMPSON",
-      text: "From the initial concept to the final product, Amazon Legacy Press Experts provided exceptional guidance and support. Their professionalism and commitment to excellence ensured my book reached its full potential."
+      text: "From the initial concept to the final product, Kindle Publishing Hub Experts provided exceptional guidance and support. Their professionalism and commitment to excellence ensured my book reached its full potential."
     },
     {
       id: 4,
       name: "EMMA WILSON",
-      text: "The team at Amazon Legacy Press Experts demonstrated unparalleled expertise in bringing my manuscript to life. Their attention to detail and commitment to quality exceeded my expectations at every turn."
+      text: "The team at Kindle Publishing Hub Experts demonstrated unparalleled expertise in bringing my manuscript to life. Their attention to detail and commitment to quality exceeded my expectations at every turn."
     },
     {
       id: 5,
       name: "MICHAEL CHEN",
-      text: "I'm thoroughly impressed with the professional service provided by Amazon Legacy Press Experts. Their strategic approach to publishing and marketing has helped my book reach audiences I never thought possible."
+      text: "I'm thoroughly impressed with the professional service provided by Kindle Publishing Hub Experts. Their strategic approach to publishing and marketing has helped my book reach audiences I never thought possible."
     },
     {
       id: 6,
       name: "SARAH ANDERSON",
-      text: "Choosing Amazon Legacy Press Experts was the best decision for my publishing journey. Their comprehensive approach and dedication to author success truly sets them apart in the industry."
+      text: "Choosing Kindle Publishing Hub Experts was the best decision for my publishing journey. Their comprehensive approach and dedication to author success truly sets them apart in the industry."
     }
   ];
 
@@ -161,14 +161,14 @@ export default function page() {
                 <h1 className="font-oswald text-2xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-wide">
                 Begin Your Visual Journey: Unveil Your Story Today
                 </h1>
-                <p className="text-sm md:text-lg mb-8">Ready to see your story come alive on screen? Amazon Legacy Press Experts invites you to start an exciting visual journey with our Video Book Trailer service. Captivate your audience, enhance your book's exposure, and elevate your storytelling to new heights. Let your narrative leap off the pages and into the vibrant realm of video. Take the first step now and witness the magic of transforming your book into a dynamic visual experience.</p>
+                <p className="text-sm md:text-lg mb-8">Ready to see your story come alive? Kindle Publishing Hub Experts invites you to start an exciting visual journey with our Video Book Trailer service. Transform your book into a dynamic visual experience.</p>
                 <button className="btn-primary text-lg uppercase tracking-wider">
                   DISCOVER MORE
                 </button>
               </div>
 
               {/* Contact Form */}
-              <div className="bg-gray-800/80 p-8 hidden md:block rounded-lg w-full max-w-md">
+              <div className="bg-white/20 backdrop-blur-lg border border-white/30 shadow-2xl p-8 hidden md:block rounded-lg w-full max-w-md">
                 <h3 className="font-oswald text-2xl text-white font-bold mb-6 text-center">Let's Get Started</h3>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <input
@@ -210,8 +210,6 @@ export default function page() {
                     SEND MESSAGE
                   </button>
                 </form>
-            <p className='text-center mt-4 text-white'><span className='text-orange-500'>Disclaimer: </span> By providing a telephone number and submitting the form you are consenting to be contacted by SMS text message. Message and data rates may apply. Reply STOP to opt out of further messaging. Visit Our <a href='/privacypolicy' className='text-orange-500 underline'>Privacy Policy Page</a> for further knowledge.</p>
-
               </div>
             </div>
           </div>
@@ -345,7 +343,7 @@ export default function page() {
                     Landscape with Proven Marketing Excellence.
                   </h2>
                   <p className="text-gray-700 mb-8">
-                    Amazon Legacy Press Experts specializes in book marketing and is a reliable partner for authors seeking both writing and promotional support. Our all-encompassing services cover editing, proofreading, cover design, reviews, and platform building.
+                    Kindle Publishing Hub Experts specializes in book marketing and is a reliable partner for authors seeking both writing and promotional support. Our all-encompassing services cover editing, proofreading, cover design, reviews, and platform building.
                   </p>
                 </div>
 

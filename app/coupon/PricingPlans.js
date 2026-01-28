@@ -21,7 +21,7 @@ const PricingPlans = () => {
     <section className={` text-white mb-12 font-oswald damascus-pattern p-12 flex flex-col justify-center items-center`}>
         <div className='flex flex-col justify-center items-center'>
             <p className='text-4xl text-orange-500 font-bold'>Our Pricing Plans</p>
-            <p className='text-lg text-gray-300 text-center max-w-2xl mt-4'>Our podium of Amazon Legacy Press services offers you with an array of experienced ghostwriters, editors and publishing eccentrics who will together, transform your idea into a splendid yet commendable book.</p>
+            <p className='text-lg text-gray-300 text-center max-w-2xl mt-4'>Our podium of Kindle Publishing Hub services offers you with an array of experienced ghostwriters, editors and publishing eccentrics who will together, transform your idea into a splendid yet commendable book.</p>
         </div>
         <div className={` flex md:flex-row  flex-col md:space-y-0  mt-6 space-y-2 md:space-x-2`}>
             {/* Pricing Plan: 01 */}
