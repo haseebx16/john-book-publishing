@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { useEffect } from "react";
 import { Poppins } from 'next/font/google';
 import Script from 'next/script';
+import TitleUpdater from './components/TitleUpdater';
 import "./globals.css";
 
 const geistSans = Geist({
@@ -40,6 +41,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <title>Kindle Publishing Hub</title>
+        <meta name="description" content="Kindle Publishing Hub - Expert book publishing services for authors" />
       <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-16944365395"
           strategy="afterInteractive"
@@ -81,6 +84,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.className} antialiased`}
       >
+        <TitleUpdater />
         {children}
       </body>
     </html>
