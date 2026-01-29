@@ -5,7 +5,6 @@ import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 export default function Footer() {
   const exploreLinks = [
     { name: 'Book Writing Services', href: 'bookwritingservices' },
-    { name: 'Ghost Book Writing', href: 'ghostwritingservices' },
     { name: 'Book Editing & Proofreading', href: 'bookeditingandproofreadingservices' },
     { name: 'Book Cover Design', href: 'bookcoverdesign' },
     { name: 'Book Illustrations', href: 'bookillustration' },
@@ -13,10 +12,10 @@ export default function Footer() {
   ];
 
   const quickLinks = [
-    { name: 'About Us', href: 'about' },
-    { name: 'Contact Us', href: 'contact' },
-    { name: 'Portfolio', href: 'portfolio' },
-    { name: 'Testimonials', href: 'testimonials' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Contact Us', href: '/contact' },
+    { name: 'Portfolio', href: '/portfolio' },
+    { name: 'Testimonials', href: '/testimonials' },
     { name: 'Privacy Policy', href: '/privacypolicy' },
   ];
 

@@ -9,7 +9,6 @@ export default function Header() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   const services = [
-    'Ghost Writing Services',
     'Book Writing Services',
     'Book Marketing Services',
     'Book Editing And Proofreading Services',
