@@ -1,6 +1,5 @@
 "use client";
 
-import { Geist, Geist_Mono } from "next/font/google";
 import { useEffect } from "react";
 import { Poppins } from 'next/font/google';
 import Script from 'next/script';
@@ -8,22 +7,13 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import TitleUpdater from './components/TitleUpdater';
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['200', '300', '400', '500', '600', '700'],
+  weight: ['300', '400', '500', '600', '700'],
   display: 'swap',
   preload: true,
   fallback: ['Arial', 'sans-serif'],
+  adjustFontFallback: true,
 });
 
 export default function RootLayout({ children }) {
@@ -57,12 +47,13 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://embed.tawk.to" />
-        <link rel="preload" href="/bg-image.jpg" as="image" fetchPriority="high" />
+        <link rel="preload" href="/bg-image.jpg" as="image" fetchPriority="high" type="image/jpeg" />
+        <link rel="prefetch" href="/bg-image.jpg" />
       <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-16944365395"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics-aw" strategy="afterInteractive">
+        <Script id="google-analytics-aw" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -72,9 +63,9 @@ export default function RootLayout({ children }) {
         </Script>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-16851710462"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics-aw" strategy="afterInteractive">
+        <Script id="google-analytics-aw-2" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -85,9 +76,9 @@ export default function RootLayout({ children }) {
 
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-P495WRFL4E"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics-g" strategy="afterInteractive">
+        <Script id="google-analytics-g" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -97,7 +88,7 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.className} antialiased`}
+        className={`${poppins.className} antialiased`}
       >
         <TitleUpdater />
         {children}

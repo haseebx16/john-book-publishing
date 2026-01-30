@@ -1,15 +1,17 @@
-// filepath: /C:/Users/Hasan/Documents/GitHub/amazon-publisher/app/page.js
-import BookShowcase from './components/BookShowcase';
-import Portfolio from './components/Portfolio';
-import HomeAbout from './components/HomeAbout';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import QuoteBar from './components/QuoteBar';
-import ErrorBoundary from './components/ErrorBoundary';
+import dynamic from 'next/dynamic';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Platforms from './components/Platforms';
-import WhyChooseUs from './components/WhyChooseUs';
+
+// Lazy load below-the-fold components
+const Portfolio = dynamic(() => import('./components/Portfolio'), { ssr: true });
+const WhyChooseUs = dynamic(() => import('./components/WhyChooseUs'), { ssr: true });
+const BookShowcase = dynamic(() => import('./components/BookShowcase'), { ssr: true });
+const Platforms = dynamic(() => import('./components/Platforms'), { ssr: true });
+const HomeAbout = dynamic(() => import('./components/HomeAbout'), { ssr: true });
+const Contact = dynamic(() => import('./components/Contact'), { ssr: true });
+const QuoteBar = dynamic(() => import('./components/QuoteBar'), { ssr: true });
+const Footer = dynamic(() => import('./components/Footer'), { ssr: true });
+const ErrorBoundary = dynamic(() => import('./components/ErrorBoundary'), { ssr: true });
 
 export default function Home() {
   return (

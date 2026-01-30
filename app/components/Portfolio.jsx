@@ -1,18 +1,33 @@
 'use client';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import dynamic from 'next/dynamic';
+
+// Lazy load slick carousel
+const Slider = dynamic(() => import('react-slick'), { ssr: false });
 
 export default function Portfolio() {
+  const [isClient, setIsClient] = useState(false);
+  const [sliderLoaded, setSliderLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+    // Load slick CSS after component mounts
+    import('slick-carousel/slick/slick.css');
+    import('slick-carousel/slick/slick-theme.css').then(() => {
+      setSliderLoaded(true);
+    });
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 3000,
     slidesToShow: 3,
     slidesToScroll: 1,
+    lazyLoad: 'ondemand',
     responsive: [
       {
         breakpoint: 1024,
@@ -52,8 +67,9 @@ export default function Portfolio() {
         </h2>
         
         <div className="relative px-8">
-          <Slider {...settings}>
-            {books.map((book) => (
+          {isClient && sliderLoaded ? (
+            <Slider {...settings}>
+              {books.map((book) => (
               <div key={book.id} className="px-4">
                 <div className="relative md:h-[500px] h-[300px]  w-full group">
                   <Image
@@ -73,7 +89,23 @@ export default function Portfolio() {
                 </div>
               </div>
             ))}
-          </Slider>
+            </Slider>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {books.slice(0, 3).map((book) => (
+                <div key={book.id} className="relative md:h-[500px] h-[300px] w-full">
+                  <Image
+                    src={book.src}
+                    alt={book.title}
+                    fill
+                    className="object-contain"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </section>

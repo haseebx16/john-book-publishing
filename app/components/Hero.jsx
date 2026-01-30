@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import emailjs from 'emailjs-com';
 
 export default function Hero() {
   const [formData, setFormData] = useState({
@@ -34,29 +33,31 @@ export default function Hero() {
     // Reset error state
     setError('');
 
-    // Send email using EmailJS
-    emailjs
-      .send(
-        'service_r0ex0cl', // Replace with your service ID
-        'template_4vtfjk5', // Replace with your template ID
-        {
-          to_email: 'support@kindlepublishinghub.com',
-          from_name: fullName,
-          from_email: email,
-          phone,
-          message,
-        },
-        'TihDoLxcsdR_sDnwT' // Replace with your EmailJS user ID
-      )
-      .then(() => {
-        alert('Your message has been sent successfully!');
-        setFormData({ fullName: '', email: '', phone: '', message: '' }); // Reset form fields
-      })
-      .catch((err) => {
-        setError('Failed to send your message. Please try again later.');
-        console.error('EmailJS Error:', err);
-      });
-      }
+    // Send email using EmailJS (lazy loaded)
+    import('emailjs-com').then((emailjs) => {
+      emailjs.default
+        .send(
+          'service_r0ex0cl',
+          'template_4vtfjk5',
+          {
+            to_email: 'support@kindlepublishinghub.com',
+            from_name: fullName,
+            from_email: email,
+            phone,
+            message,
+          },
+          'TihDoLxcsdR_sDnwT'
+        )
+        .then(() => {
+          alert('Your message has been sent successfully!');
+          setFormData({ fullName: '', email: '', phone: '', message: '' });
+        })
+        .catch((err) => {
+          setError('Failed to send your message. Please try again later.');
+          console.error('EmailJS Error:', err);
+        });
+    });
+  }
 
   return (
     <section className="relative min-h-screen pt-20">
@@ -67,6 +68,7 @@ export default function Hero() {
           className="w-full h-full bg-cover bg-center"
           style={{
             backgroundImage: `url('/bg-image.jpg')`,
+            imageRendering: 'auto',
           }}
         ></div>
       </div>

@@ -26,12 +26,30 @@ body {
 /* Performance optimizations */
 img {
   content-visibility: auto;
+  decoding: async;
 }
 
 /* Optimize background images */
 [style*="background-image"] {
   will-change: transform;
   backface-visibility: hidden;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Reduce layout shifts */
+* {
+  box-sizing: border-box;
+}
+
+/* Optimize font rendering */
+body {
+  text-rendering: optimizeSpeed;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  body {
+    text-rendering: optimizeLegibility;
+  }
 }
 
 @layer base {
