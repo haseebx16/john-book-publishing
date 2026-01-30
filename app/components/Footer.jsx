@@ -8,7 +8,7 @@ export default function Footer() {
     { name: 'Book Editing & Proofreading', href: 'bookeditingandproofreadingservices' },
     { name: 'Book Cover Design', href: 'bookcoverdesign' },
     { name: 'Book Illustrations', href: 'bookillustration' },
-    { name: 'Book Marketing', href: 'bookmarketing' },
+    { name: 'Book Marketing', href: 'bookmarketingservices' },
   ];
 
   const quickLinks = [

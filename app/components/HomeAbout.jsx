@@ -75,6 +75,7 @@ export default function HomeAbout() {
                       width={48}
                       height={48}
                       className="object-cover w-full h-full"
+                      loading="lazy"
                     />
                   </div>
                   <div>

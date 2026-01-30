@@ -61,6 +61,8 @@ export default function Portfolio() {
                     alt={book.title}
                     fill
                     className="object-contain transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                   {/* Overlay with title */}
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 hidden md:flex">

@@ -42,6 +42,8 @@ export default function BookShowcase() {
               width={600}
               height={600}
               className="object-contain"
+              loading="lazy"
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
 
