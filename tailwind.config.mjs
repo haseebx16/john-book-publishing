@@ -14,6 +14,9 @@ export default {
         customYellow: "#eca212",
         customField: "#ffe99f",
       },
+      fontFamily: {
+        sans: ['var(--font-poppins)', 'Arial', 'sans-serif'],
+      },
     },
   },
   plugins: [],

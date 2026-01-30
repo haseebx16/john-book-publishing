@@ -62,7 +62,7 @@ export default function Contact() {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-[1400px] mx-auto px-4">
-        <h2 className="text-5xl font-oswald text-center mb-16 text-orange-500">
+        <h2 className="text-5xl text-center mb-16 text-orange-500">
           REACH OUT TO US
         </h2>
 
@@ -74,7 +74,7 @@ export default function Contact() {
               value={formData.fullName}
               onChange={handleChange}
               placeholder="Full Name"
-              className="w-full p-4 bg-white rounded font-oswald text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full p-4 bg-white rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500"
               required
             />
           </div>
@@ -86,7 +86,7 @@ export default function Contact() {
               value={formData.email}
               onChange={handleChange}
               placeholder="Your Email"
-              className="w-full p-4 bg-white rounded font-oswald text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full p-4 bg-white rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500"
               required
             />
           </div>
@@ -98,7 +98,7 @@ export default function Contact() {
               value={formData.phone}
               onChange={handleChange}
               placeholder="Phone Number"
-              className="w-full p-4 bg-white rounded font-oswald text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full p-4 bg-white rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500"
               required
             />
           </div>
@@ -121,7 +121,7 @@ export default function Contact() {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-orange-500 text-white px-12 py-4 font-oswald text-xl hover:bg-orange-600 transition-colors duration-300 uppercase"
+              className="bg-orange-500 text-white px-12 py-4 text-xl hover:bg-orange-600 transition-colors duration-300 uppercase"
             >
               SEND MESSAGE
             </button>

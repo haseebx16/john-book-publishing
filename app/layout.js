@@ -9,11 +9,12 @@ import "./globals.css";
 
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  display: 'swap',
-  preload: true,
+  weight: ['400', '600', '700'],
+  display: 'optional',
+  preload: false,
   fallback: ['Arial', 'sans-serif'],
-  adjustFontFallback: true,
+  adjustFontFallback: false,
+  variable: '--font-poppins',
 });
 
 export default function RootLayout({ children }) {
@@ -43,12 +44,12 @@ export default function RootLayout({ children }) {
       <head>
         <title>Kindle Publishing Hub</title>
         <meta name="description" content="Kindle Publishing Hub - Expert book publishing services for authors" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://embed.tawk.to" />
         <link rel="preload" href="/bg-image.jpg" as="image" fetchPriority="high" type="image/jpeg" />
-        <link rel="prefetch" href="/bg-image.jpg" />
       <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-16944365395"
           strategy="lazyOnload"
@@ -88,7 +89,8 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body
-        className={`${poppins.className} antialiased`}
+        className={`${poppins.variable} font-sans antialiased`}
+        style={{ fontFamily: 'var(--font-poppins), Arial, sans-serif' }}
       >
         <TitleUpdater />
         {children}

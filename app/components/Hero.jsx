@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Hero() {
   const [formData, setFormData] = useState({
@@ -64,13 +65,16 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/60 z-10"></div>
-        <div 
-          className="w-full h-full bg-cover bg-center"
-          style={{
-            backgroundImage: `url('/bg-image.jpg')`,
-            imageRendering: 'auto',
-          }}
-        ></div>
+        <Image
+          src="/bg-image.jpg"
+          alt="Background"
+          fill
+          priority
+          quality={75}
+          sizes="100vw"
+          className="object-cover"
+          unoptimized
+        />
       </div>
 
       {/* Content */}
@@ -78,10 +82,10 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           {/* Text Content */}
           <div className="text-white max-w-2xl">
-            <h2 className="font-oswald text-lg md:text-xl mb-4 text-orange-500 uppercase font-medium tracking-wider">
+            <h2 className="text-lg md:text-xl mb-4 text-orange-500 uppercase font-medium tracking-wider">
               Kindle Publishing Hub EXPERTS - TRANSFORMING YOUR STORIES INTO BESTSELLING MASTERPIECES
             </h2>
-            <h1 className="font-oswald text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-wide">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-wide">
               TRANSFORM YOUR LITERARY DREAMS INTO BESTSELLING SUCCESS
             </h1>
             <a href='/about'><button className="btn-primary text-lg uppercase tracking-wider">
@@ -91,7 +95,7 @@ export default function Hero() {
 
           {/* Contact Form */}
           <div className="bg-white/20 backdrop-blur-lg border border-white/30 shadow-2xl hidden md:block p-8 rounded-lg w-full max-w-md">
-            <h3 className="font-oswald text-2xl text-white font-bold mb-6 text-center">Let's Get Started</h3>
+            <h3 className="text-2xl text-white font-bold mb-6 text-center">Let's Get Started</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <input
                 type="text"
