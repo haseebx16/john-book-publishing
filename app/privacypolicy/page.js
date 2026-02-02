@@ -86,7 +86,7 @@ export default function BookWritingServices() {
                 2. Consent
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
-                By providing your phone number, you consent to its use strictly for the purposes stated above. Consent is obtained through the Contact Form, and you may withdraw consent at any time by contacting us at <span className='text-orange-500'>support@kindlepublishinghub.com</span>.
+                By providing your phone number, you consent to its use strictly for the purposes stated above. Consent is obtained through the Contact Form, and you may withdraw consent at any time by contacting us at <span className='text-orange-500'>info@kindlepublishinghub.com</span>.
                 </p>
                 <h2 className="text-4xl font-oswald text-gray-800 mb-6">
                 3. Third-Party Sharing
@@ -113,13 +113,13 @@ export default function BookWritingServices() {
                 5. Your Rights
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
-                You may request access to, correction of, or deletion of your phone number from our systems by contacting <span className='text-orange-500'>support@kindlepublishinghub.com</span>.
+                You may request access to, correction of, or deletion of your phone number from our systems by contacting <span className='text-orange-500'>info@kindlepublishinghub.com</span>.
                 </p>
                 <h2 className="text-4xl font-oswald text-gray-800 mb-6">
                 Example For Direct Use
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
-                "We collect phone numbers solely to contact. Your phone number and consent will never be shared with third-party providers, advertisers, or external organizations unless explicitly required by law or to fulfill services you’ve requested (e.g., SMS delivery). All data is secured and retained only for as long as necessary. You may withdraw consent or request deletion at any time by contacting support@kindlepublishinghub.com."
+                "We collect phone numbers solely to contact. Your phone number and consent will never be shared with third-party providers, advertisers, or external organizations unless explicitly required by law or to fulfill services you’ve requested (e.g., SMS delivery). All data is secured and retained only for as long as necessary. You may withdraw consent or request deletion at any time by contacting info@kindlepublishinghub.com."
                 </p>
                 
               </div>

@@ -54,7 +54,7 @@ export default function page() {
         'service_r0ex0cl', // Replace with your service ID
         'template_4vtfjk5', // Replace with your template ID
         {
-          to_email: 'support@kindlepublishinghub.com',
+          to_email: 'info@kindlepublishinghub.com',
           from_name: fullName,
           from_email: email,
           phone,

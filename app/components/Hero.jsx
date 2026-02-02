@@ -41,7 +41,7 @@ export default function Hero() {
           'service_r0ex0cl',
           'template_4vtfjk5',
           {
-            to_email: 'support@kindlepublishinghub.com',
+            to_email: 'info@kindlepublishinghub.com',
             from_name: fullName,
             from_email: email,
             phone,

@@ -33,7 +33,7 @@ export default function Footer() {
           </div>
 
           {/* Explore Section */}
-          <div className='hidden md:block'>
+          <div>
             <h3 className="text-xl  font-oswald mb-6">EXPLORE</h3>
             <ul className="space-y-3">
               {exploreLinks.map((link) => (
@@ -73,10 +73,10 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <FaEnvelope className="text-orange-500 flex-shrink-0" />
                 <Link 
-                  href="mailto:support@kindlepublishinghub.com"
+                  href="mailto:info@kindlepublishinghub.com"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  support@kindlepublishinghub.com
+                  info@kindlepublishinghub.com
                 </Link>
               </li>
               <li className="flex items-center gap-3">

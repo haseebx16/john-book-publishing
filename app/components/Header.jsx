@@ -38,7 +38,7 @@ export default function Header() {
           <div className="w-1/4 p-6">
             <Link href="/" className="font-oswald text-2xl font-bold text-orange-500">
               <span className="flex items-center">
-                <img src='/header.png' className='md:w-[140px] md:h-[60px] w-auto h-auto' />
+                <img src='/header.png' className='md:w-[140px] md:h-[60px] w-[130px] h-[30px]' />
               </span>
             </Link>
           </div>
@@ -160,8 +160,8 @@ export default function Header() {
             <Link href="/contact" className="nav-link">
               Contact Us
             </Link>
-            <a href='mailto:support@kindlepublishinghub.com' className="font-oswald text-orange-500 font-bold">
-              support@kindlepublishinghub.com
+            <a href='mailto:info@kindlepublishinghub.com' className="font-oswald text-orange-500 font-bold">
+              info@kindlepublishinghub.com
             </a>
           </div>
         </div>
