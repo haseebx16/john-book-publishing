@@ -162,9 +162,7 @@ export default function page() {
                 Begin Your Visual Journey: Unveil Your Story Today
                 </h1>
                 <p className="text-sm md:text-lg mb-8">Ready to see your story come alive? Kindle Publishing Hub Experts invites you to start an exciting visual journey with our Video Book Trailer service. Transform your book into a dynamic visual experience.</p>
-                <button className="btn-primary text-lg uppercase tracking-wider">
-                  DISCOVER MORE
-                </button>
+                
               </div>
 
               {/* Contact Form */}
@@ -366,6 +364,13 @@ export default function page() {
                       </li>
                     ))}
                   </ul>
+                  <div className="mt-8">
+                    <a href="/contact">
+                      <button className="btn-primary uppercase tracking-wider">
+                        Get Started
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

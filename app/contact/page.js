@@ -73,9 +73,7 @@ export default function page() {
                 <h1 className="font-oswald text-2xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-wide">
                 Are you an author ready to publish your book on Amazon, or a publisher aiming to refine your digital publishing strategy?
                 </h1>
-                <button className="btn-primary text-lg uppercase tracking-wider">
-                  DISCOVER MORE
-                </button>
+                
               </div>
               
               

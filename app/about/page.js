@@ -84,7 +84,7 @@ export default function page() {
         <div 
           className="w-full h-full bg-cover bg-center"
           style={{
-            backgroundImage: `url('/bg-image.jpg')`,
+            backgroundImage: `url('/hero-books.jpg')`,
           }}
         ></div>
       </div>
@@ -101,9 +101,7 @@ export default function page() {
                   NAVIGATING DIGITAL PUBLISHING CHALLENGES WITH A RELIABLE ALLY
                 </h1>
                 <p className="text-sm md:text-lg mb-8">At Kindle Publishing Hub Experts, we stand by you every step of the way, offering an extensive range of services to bring your publishing goals to life. Founded on a powerful yet simple mission, we aim to empower both authors and publishers as they navigate the ever-evolving world of publishing.</p>
-                <button className="btn-primary text-lg uppercase tracking-wider">
-                  DISCOVER MORE
-                </button>
+               
               </div>
 
               {/* Contact Form */}
@@ -205,6 +203,13 @@ export default function page() {
                       </li>
                     ))}
                   </ul>
+                  <div className="mt-8">
+                    <a href="/contact">
+                      <button className="btn-primary uppercase tracking-wider">
+                        Get Started
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

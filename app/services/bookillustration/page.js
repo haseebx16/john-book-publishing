@@ -162,6 +162,13 @@ SCALING UP FOR GREATER IMPACT
                       </li>
                     ))}
                   </ul>
+                  <div className="mt-8">
+                    <a href="/contact">
+                      <button className="btn-primary uppercase tracking-wider">
+                        Get Started
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

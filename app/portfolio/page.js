@@ -161,9 +161,7 @@ export default function page() {
                 IT'S TIME TO BRING THAT MANUSCRIPT TO LIFE.
                 </h1>
                 <p className="text-sm md:text-lg mb-8">Unlock the full potential of your manuscript with our comprehensive publishing services. We guide you through a smooth process, ensuring your work receives the attention it deserves.</p>
-                <button className="btn-primary text-lg uppercase tracking-wider">
-                  DISCOVER MORE
-                </button>
+          
               </div>
 
               {/* Contact Form */}

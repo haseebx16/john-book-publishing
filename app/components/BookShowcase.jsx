@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { FaCheck } from 'react-icons/fa';
-
+import Link from 'next/link';
 export default function BookShowcase() {
   const leftColumnServices = [
     'Amazon Publishing',
@@ -82,9 +82,9 @@ export default function BookShowcase() {
 
             {/* Call to Action Button */}
             <div className="flex justify-end">
-              <button className="bg-black text-white px-8 py-4 font-oswald text-lg hover:bg-gray-800 transition-colors duration-300">
+              <Link href="/contact"><button className="bg-black text-white px-8 py-4 font-oswald text-lg hover:bg-gray-800 transition-colors duration-300">
                 Looking For A Book Writer?
-              </button>
+              </button></Link>
             </div>
           </div>
         </div>
