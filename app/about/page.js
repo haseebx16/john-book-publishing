@@ -90,7 +90,8 @@ export default function page() {
       </div>
 
           {/* Content */}
-          <div className="container mx-auto px-4 py-20 relative z-20 h-full flex items-center">
+          <div className="container mx-auto px-4 py-20 pt-56
+           md:pt-20 relative z-20 h-full flex items-center">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
               {/* Text Content */}
               <div className="text-white mt-16 md:mt-0 max-w-2xl">
