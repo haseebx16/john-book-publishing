@@ -145,7 +145,7 @@ export default function page() {
                     type="submit"
                     className="btn-primary w-full uppercase tracking-wider"
                   >
-                    SEND MESSAGE
+                    SEND MESSAGE.
                   </button>
                 </form>
               </div>
